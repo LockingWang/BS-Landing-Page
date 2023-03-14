@@ -1,0 +1,9 @@
+
+.header {
+    height: 545px;
+    background-size: cover;
+    background-position: bottom center;
+    @media (min-width: 768px) {
+        height: 627px;
+    }
+}
