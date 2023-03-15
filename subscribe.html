@@ -38,13 +38,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li class="nav-item w-100 w-lg-auto text-center border-bottom border-bottom-lg-0">
-                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                <a class="nav-link" aria-current="page" href="index.html">首頁</a>
               </li>
               <li class="nav-item w-100 w-lg-auto text-center border-bottom border-bottom-lg-0">
                 <a class="nav-link" href="#">服務介紹</a>
               </li>
               <li class="nav-item w-100 w-lg-auto text-center border-bottom border-bottom-lg-0">
-                <a class="nav-link" href="subscribe.html">方案費用</a>
+                <a class="nav-link active" href="subscribe.html">方案費用</a>
               </li>
               <li class="nav-item w-100 w-lg-auto text-center border-bottom border-bottom-lg-0">
                 <a class="nav-link" href="#">常見問題</a>
@@ -64,10 +64,10 @@
     </section>
     
     <section class="row justify-content-center py-5">
-      <form class="col-lg-8 border-0 shadow rounded py-5 px-4" action="#">
-        <div>
-          <h3 class="border-left-info ps-3 mb-3">選擇方案</h3>
-        </div>
+      <form class="col-lg-8 border-0 shadow rounded py-5 px-4 needs-validation" action="#" novalidate>
+
+        <h3 class="border-left-info ps-3 mb-3">選擇方案</h3>
+
         <div class="row row-cols-1 row-cols-lg-3 mb-5 g-3">
           <div class="col">
             <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
@@ -97,8 +97,91 @@
             </label>
           </div>
         </div>
-        <div>
-          <h3 class="border-left-info ps-3 mb-3">填寫資料</h3>
+
+        <h3 class="border-left-info ps-3 mb-3">填寫資料</h3>
+
+        <div class="row g-3">
+          <div class="col-lg-6">
+            <label for="user-name" class="form-label">名字</label>
+            <input type="text" class="form-control" id="user-name" placeholder="雅婷" required>
+            <div class="valid-feedback">
+              Good!
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <label for="user-firstName" class="form-label">姓氏</label>
+            <input type="text" class="form-control" id="user-firstName" placeholder="蔡" required>
+            <div class="valid-feedback">
+              Good!
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="user-phone" class="form-label">手機號碼</label>
+            <input type="tel" class="form-control" id="user-phone" placeholder="0900-111-222" required>
+            <div class="invalid-feedback">
+              請輸入您的手機號碼。
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="user-email" class="form-label">電子郵件</label>
+            <input type="email" class="form-control" id="user-email" placeholder="abc@gmail.com" required>
+            <div class="invalid-feedback">
+              請輸入您的電子郵件信箱。
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="user-address" class="form-label">住址</label>
+            <input type="text" class="form-control" id="user-address" placeholder="OO市OO區XX路XX號" required>
+            <div class="invalid-feedback">
+              請輸入您的居住地址。
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="free-time" class="form-label">方便聯絡的時間</label>
+            <select class="form-select" id="free-time" required>
+              <option selected disabled value="">請選擇...</option>
+              <option value="am">上午(8:00-12:00)</option>
+              <option value="pm">下午(13:30-18:00)</option>
+              <option value="night">晚上(19:00-21:00)</option>
+            </select>
+            <div class="invalid-feedback">
+              請選擇一個時段。
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="form-label">加值服務</p>
+            <div class="row">
+              <div class="col-lg-4">
+                <input class="form-check-input me-2" type="checkbox" value="clean-house" id="clean-house">
+                <label class="form-check-label me-5" for="clean-house">
+                  每週一清掃家裡+100
+                </label>
+              </div>
+              <div class="col-lg-4">
+                <input class="form-check-input me-2" type="checkbox" value="massage" id="massage">
+                <label class="form-check-label me-5" for="massage">
+                  按摩+50
+                </label>
+              </div>
+              <div class="col-lg-4">
+                <input class="form-check-input me-2" type="checkbox" value="private-talk" id="private-talk">
+                <label class="form-check-label me-5" for="private-talk">
+                  聽你說話+150
+                </label>
+              </div>
+            </div>
+
+            
+
+            
+          </div>
+          <div class="col-12">
+            <label for="user-text" class="form-label">備註說明</label>
+            <textarea class="form-control" name="user-text" id="user-text" rows="3"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-info w-100 fs-5" type="submit">確認訂單</button>
+          </div>
         </div>
       </form>
     </section>
