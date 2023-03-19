@@ -44,6 +44,9 @@
 @import "./components/border";
 
 
-body {
-    font-family: 'Noto Sans TC', sans-serif;
+.card-hover {
+    transition: all 0.3s;
+    &:hover {
+        background-color: pink;
+    }
 }
